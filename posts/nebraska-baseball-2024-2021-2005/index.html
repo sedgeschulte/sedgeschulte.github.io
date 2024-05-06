@@ -189,7 +189,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>The University of Nebraska’s baseball team has not made it back to the College World Series since the 2005 season with Alex Gordon leading the them to Omaha. Why is that? Have</p>
+<p>The University of Nebraska’s baseball team has not made it back to the College World Series since the 2005 season with Alex Gordon leading them to Omaha. Why is that? Have the Huskers just been incredibly bad the past 19 years? Well, they have not been terrible, probably just some good old fashioned Husker luck, but as of late Will Bolt has been leading the baseball team in the right direction. Could the 2024 team be the first since 2005 to make it back to Omaha this year?</p>
+<p>The keys to having a deep run in the college baseball postseason is twofold. 1: have a good bullpen to limit opponents’ baserunners and runs and 2. an offense that gets on base frequently and can produce extra base hits with ease.</p>
+<p>Over the past couple of years under head coach Bolt, the bullpen has not been the best, although there have been some bright spots with Spencer Schwellenbach and Brett Sears but overall, the bullpen has been shaky in the 2020’s.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -262,7 +264,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>text here.</p>
+<p>The pitching excellence corner are all the pitchers that have an ERA (earned run average) of less than or equal to 3.0 and a WHIP (walks plus hits per inning) of less than or equal to 1.25. The 2005 team had seven pitchers in the pitching excellence corner whereas the 2021 and 2024 team have a combined six pitchers in the same corner, three from each season.</p>
+<p>Let’s look at the offensive side of the diamond. Getting on base is one thing, but generating extra base hits often to drive in runs is what can be another deciding factor in a win or loss in each baseball game.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -356,7 +359,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>text here.</p>
+<p>Alex Gordon and the 2005 baseball team have almost double the amount of extra base hits as the other two teams, but the 2024 season is still ongoing and the 2021 team did play less games as well since they only made it to the regional that year.</p>
+<p>Generating a lot of hits is one thing, it is another to do it on a consistent basis. Any team can have a couple of fluke games where the bats are on fire, but to be able to get on base and generate extra base hits with the whole one through nine line-up is a hard thing to do.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -373,8 +377,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>ab24, <span class="fu">aes</span>(<span class="at">x=</span>OPS, <span class="at">y=</span><span class="st">`</span><span class="at">SLG%</span><span class="st">`</span>, <span class="at">size=</span>AVG), <span class="at">color=</span><span class="st">"#d00000"</span>) <span class="sc">+</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>ab21, <span class="fu">aes</span>(<span class="at">x=</span>OPS, <span class="at">y=</span><span class="st">`</span><span class="at">SLG%</span><span class="st">`</span>, <span class="at">size=</span>AVG), <span class="at">color=</span><span class="st">"#c7c8ca"</span>, <span class="at">alpha=</span>.<span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>ab05, <span class="fu">aes</span>(<span class="at">x=</span>OPS, <span class="at">y=</span><span class="st">`</span><span class="at">SLG%</span><span class="st">`</span>, <span class="at">size=</span>AVG), <span class="at">color=</span><span class="st">"#249ab5"</span>, <span class="at">alpha=</span>.<span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>ab21, <span class="fu">aes</span>(<span class="at">x=</span>OPS, <span class="at">y=</span><span class="st">`</span><span class="at">SLG%</span><span class="st">`</span>, <span class="at">size=</span>AVG), <span class="at">color=</span><span class="st">"black"</span>, <span class="at">alpha=</span>.<span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>ab05, <span class="fu">aes</span>(<span class="at">x=</span>OPS, <span class="at">y=</span><span class="st">`</span><span class="at">SLG%</span><span class="st">`</span>, <span class="at">size=</span>AVG), <span class="at">color=</span><span class="st">"#249ab5"</span>, <span class="at">alpha=</span>.<span class="dv">4</span>) <span class="sc">+</span></span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="fl">0.8165</span>) <span class="sc">+</span></span>
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="fl">0.4271429</span>) <span class="sc">+</span></span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x=</span> <span class="fl">1.1</span>, <span class="at">y=</span>.<span class="dv">6</span>, <span class="at">label=</span><span class="st">"Great hitters"</span>), <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span></span>
@@ -384,7 +388,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(</span>
 <span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"On base plus slugging"</span>,</span>
 <span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Slugging percentage"</span>,</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Great hitters get on base consistantly"</span>,</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Great hitters get on base consistently"</span>,</span>
 <span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Teams can't rely on pitching to get to Omaha, they need to get on base and drive in runs as well."</span>,</span>
 <span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: huskers.com | By: Sage Schulte"</span></span>
 <span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
@@ -405,7 +409,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>text here</p>
+<p>So, is the 2024 Nebraska baseball team the best one since 2005? It is too early to tell as the season is still ongoing, but they have a shot at it as they are projected to either host a regional or be the second seed. If the 2021 team made it to the world series this debate would have probably never existed in the first place.</p>
 
 
 
